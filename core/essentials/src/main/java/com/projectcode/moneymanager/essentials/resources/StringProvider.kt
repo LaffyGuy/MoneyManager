@@ -1,0 +1,3 @@
+package com.projectcode.moneymanager.essentials.resources
+
+interface StringProvider
