@@ -1,7 +1,9 @@
 package com.projectcode.moneymanager.di
 
+import com.projectcode.moneymanager.AndroidExceptionHandler
 import com.projectcode.moneymanager.AndroidLogger
 import com.projectcode.moneymanager.EssentialsStringProviderImpl
+import com.projectcode.moneymanager.essentials.exceptions.handler.ExceptionHandler
 import com.projectcode.moneymanager.essentials.exceptions.mapper.DefaultExceptionToMessageMapper
 import com.projectcode.moneymanager.essentials.exceptions.mapper.ExceptionToMessageMapper
 import com.projectcode.moneymanager.essentials.logger.Logger
@@ -35,6 +37,11 @@ interface CommonAndroidModule {
     fun bindExceptionToMessageMapper(
         impl: DefaultExceptionToMessageMapper
     ): ExceptionToMessageMapper
+
+    @Binds
+    fun bindExceptionHandler(
+        impl: AndroidExceptionHandler
+    ): ExceptionHandler
 
 
 }

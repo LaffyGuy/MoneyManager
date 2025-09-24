@@ -13,6 +13,6 @@ kotlin {
 }
 
 dependencies {
-    api(libs.coroutines.core)
+    implementation(project(":core:essentials"))
     implementation(libs.javax.inject)
 }

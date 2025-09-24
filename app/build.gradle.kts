@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.moneymanager"
+    namespace = "com.projectcode.moneymanager"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.moneymanager"
+        applicationId = "com.projectcode.moneymanager"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -44,7 +44,7 @@ android {
 dependencies {
 
     implementation(project(":core:common-android"))
-    
+    implementation(project(":features:init:presentation"))
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
 
