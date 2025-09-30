@@ -1,6 +1,5 @@
-package com.projectcode.moneymanager.ui.theme
+package com.projectcode.theme.material
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

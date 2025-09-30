@@ -1,4 +1,4 @@
-package com.projectcode.moneymanager.ui.theme
+package com.projectcode.theme.material
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
