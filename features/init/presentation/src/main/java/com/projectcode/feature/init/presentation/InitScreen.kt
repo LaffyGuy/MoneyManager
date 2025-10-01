@@ -30,6 +30,8 @@ import com.projectcode.theme.Dimens
 import com.projectcode.theme.components.ContainerView
 import com.projectcode.theme.components.ImageView
 import com.projectcode.theme.components.ProgressButton
+import com.projectcode.theme.previews.PreviewScreenContent
+import com.projectcode.theme.previews.ScreenPreview
 
 fun ScreenScope.initScreen(
     onLaunchSignInScreen: () -> Unit
@@ -157,9 +159,9 @@ fun InitLandscapeContent(
     }
 }
 
-@Preview(showBackground = true, widthDp = 800, heightDp = 400)
+@ScreenPreview
 @Composable
-private fun InitContentPreview() {
+private fun InitContentPreview() = PreviewScreenContent {
     InitContent(
         State(
             keyFeature = KeyFeature(0, "Title", "Description", ImageSource.Empty),
